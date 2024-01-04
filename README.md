@@ -1,10 +1,9 @@
-Predicting Employee Turnover
-
-Overview 
-The goal of this project was to create an XGBoost model to predict employee turnover at a large motor company. This project utilized employee data that the company did not know how to utilise, but desired to take inititives to improve employee satisfaction. The final XGBoost model performed with 99% accuracy and 98% precision determining what features were most important in separating employees who leave from those who stay. Based on the model, the satisfaction level, the average monthly hours, and the last evaluation were most influential in determining whether an employee stayed with the company (>83%) vs one who left (<17%). 
-
-Business Understanding 
+# Predicting Employee Turnover
+# Overview
+The goal of this project was to create an Extreme Gradient Boosting (XGBoost) model to predict employee turnover at a large motor company. This project utilized employee data that the company did not know how to utilise, but desired to take inititives to improve employee satisfaction. The final XGBoost model performed with 99% accuracy and 98% precision determining what features were most important in separating employees who leave from those who stay. Based on the model, the satisfaction level, the average monthly hours, and the last evaluation were most influential in determining whether an employee stayed with the company (>83%) vs one who left (<17%). 
+# Business Understanding
 High employee retention is crucial for several reasons. From cost savings and organisational knowledge, to team cohesion and customer satisfaction, high employee retention has numerous benefits that can contribute to a more stable, productive, and successful work environment. 
-
-Data Understanding
-The data was collected internally by Sailfort Motors. It contained data on nearly 15000 past and current employees, with 18 features. The features included information on satisfaction levels, last evaluation scores, the number of projects completed, the average monthly hours, and promotions in the last five years. 
+# Data Understanding
+The data was collected internally by Sailfort Motors. It contained data on nearly 15000 past and current employees, with 18 features. The features included information on satisfaction levels, last evaluation scores, the number of projects completed, the average monthly hours, and promotions in the last five years. The data was engineered such that all relevant features were made interpretable by the XGBoost model.
+# Modeling and Evaluation 
+An XGBoost model comprising 100 decision trees was used to determine feature importance in who would tip generously or not. The below plot shows that trip duration, distance, and the cost of a fare were the Top 3 most important factors in determining a generous tipper from a non-generous one. The final model performed with 86% accuracy and 72% precision. 
