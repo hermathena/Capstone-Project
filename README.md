@@ -6,4 +6,10 @@ High employee retention is crucial for several reasons. From cost savings and or
 # Data Understanding
 The data was collected internally by Sailfort Motors. It contained data on nearly 15000 past and current employees, with 18 features. The features included information on satisfaction levels, last evaluation scores, the number of projects completed, the average monthly hours, and promotions in the last five years. The data was engineered such that all relevant features were made interpretable by the XGBoost model.
 # Modeling and Evaluation 
-An XGBoost model comprising 100 decision trees was used to determine feature importance in who would tip generously or not. The below plot shows that trip duration, distance, and the cost of a fare were the Top 3 most important factors in determining a generous tipper from a non-generous one. The final model performed with 86% accuracy and 72% precision. 
+An XGBoost model comprising gradient boosted trees was used to determine feature importance in who would leave the company or not. The below plot shows that staisfaction, average monthly hours, and the last evaluation were the top 3 most important factors in determining an employee who stayed from one who would leave.
+
+![alt text](https://github.com/hermathena/Portfolio/blob/110acb3f9650b892883ae154ff50ff506d235dd0/Chart%20of%20Feature%20Importance.png)
+
+It is interesting to note that salary level had little importance. The business consequences of this insight are profound.
+# Conclusion
+This model can benefit the company, by allowing them to know which employees are likely to leave, giving the company the opportunity to seek proactive remedy. It also allows the company to identify the features that most contribute to employee retention, and avoid wasting resources on those that do not. In the future, addressing the details behind the satisfaction level scores would enable the company to better target the employee's perception of what is importance to them.
